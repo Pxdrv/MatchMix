@@ -16,7 +16,7 @@
 
 🔗 _*url github:*_ https://github.com/Pxdrv/MatchMix
 
-🛬 _*url landpage:*_ pxdrv.github.io/MatchMix/
+🛬 _*url landpage:*_ https://pxdrv.github.io/MatchMix/
 
 🤝 _*url Modelo Negócio (imagem):*_ https://drive.google.com/file/d/1aw3UNR4hZYh_y69ukCL3-66Lg7ss1Zn-/view?usp=sharing
 
