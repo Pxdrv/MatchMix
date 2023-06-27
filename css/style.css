@@ -1,0 +1,303 @@
+:root {
+    --color-primary: #e17929;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.top {
+    background: linear-gradient(
+        342deg,
+        rgba(255, 255, 255, 0) 0%,
+        #fd852976 300%
+    );
+    position: relative;
+    height: 100vh;
+}
+
+.header {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1600px !important;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo h1 {
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav .link {
+    margin: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+.hero {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+}
+
+.hero .circle {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+}
+
+.hero .circle img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hero .circle-1 {
+    border-radius: 100% 0 100% 100%;
+    height: 40vw;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.hero .kau {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 80vh;
+    width: 100%;
+}
+
+.hero .kau img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.hero .circle-2 {
+    border-radius: 100%;
+    border: 10px solid white;
+    top: 50%;
+    left: -125px;
+    height: 250px;
+    width: 250px;
+    transform: translateY(-30%);
+}
+
+.banner {
+    height: calc(90% - 112px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.banner .container {
+    width: 100%;
+}
+
+.banner .title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.banner .title span {
+    color: var(--color-primary);
+}
+
+.banner .subtitle {
+    max-width: 600px;
+    line-height: 45px;
+    font-size: 2rem;
+}
+
+.banner .button {
+    background-color: var(--color-primary);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.banner .button:hover {
+    background-color: #1c2f4a;
+    color: white;
+    transform: scale(1.02);
+}
+
+#about {
+    background-color: #202124;
+    padding: 3rem 0;
+    color: white;
+}
+
+#about .content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#about .content img {
+    width: 100%;
+}
+
+#about .content p {
+    font-size: 1.3rem;
+}
+
+#about .content h1 span {
+    color: var(--color-primary);
+    display: block;
+}
+
+#functions .title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#functions .content {
+    display: flex;
+    gap: 10rem;
+}
+
+#functions {
+    background-color: #202124;
+    padding: 3rem 0;
+    padding-bottom: 9.5rem;
+    color: white;
+}
+
+#functions .content .card {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#functions .content .card h1 {
+    font-size: 1.7rem;
+}
+
+#contacts .title {
+    background-image: url(../img/gol2.png);
+    background-position: center;
+    background-size: cover;
+    color: #e17929;
+}
+
+#contacts .title .content {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+}
+
+#contacts .content {
+    display: flex;
+    gap: 2rem;
+    padding: 1.25rem 0;
+}
+
+#contacts .content div {
+    width: 100%;
+}
+
+#contacts {
+    background-color: var(--color-primary);
+}
